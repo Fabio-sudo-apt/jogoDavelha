@@ -12,7 +12,7 @@ function handleClick(event) {
 
   if (handleMove(position)) {
     setTimeout(() => {
-      alert("O jogo acabou - Vencedor foi " + (playerTime == 0?"Escudo":"Espada"))
+      Vencer()
     }, 10)
   }
 

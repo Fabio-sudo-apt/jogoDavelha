@@ -6,20 +6,79 @@
 body {
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    45deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 31%,
+    rgba(0, 202, 255, 0.9920343137254902) 80%
+  );
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  overflow: hidden;
 }
-
+body > h1 {
+  color: #f9f9f9;
+  margin: 10px;
+  text-transform: uppercase;
+}
 .square {
   width: 100px;
   height: 100px;
-  background-color: beige;
-
-  border: 1px solid grey;
 
   display: inline-block;
-  
+  margin: 5px;
+
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  box-shadow: 10px 7px 5px rgba(50, 50, 50, 0.77);
+}
+.restart {
+  font-size: 20px;
+  font-weight: normal;
+
+  margin: 10px;
+  padding: 10px;
+
+  color: #f9f9f9;
+  background-color: rgba(0, 202, 255, 0.9920343137254902);
+
+  border-radius: 10px;
+  border: none;
+
+  cursor: pointer;
+}
+.vencerdor {
+  margin: auto;
+  width: 350px;
+  height: 340px;
+  background-color: #f9f9f9;
+  position: relative;
+  bottom: 400px;
+  border-radius: 10px;
+  box-shadow: 10px 7px 5px rgba(50, 50, 50, 0.77);
+  display: none;
+}
+.vencerdor h1{
+  position: absolute;
+  top: 80px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.vencerdor div::after {
+  position: absolute;
+  content: attr(data-content);
+  font-size: 60px;
+  line-height: 100px;
+  top: 100px;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 .o {
-    position: relative;
+  position: relative;
 }
 .o::after {
   position: absolute;
@@ -33,7 +92,7 @@ body {
 }
 
 .x {
-    position: relative;
+  position: relative;
 }
 .x::after {
   position: absolute;
