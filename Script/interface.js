@@ -15,7 +15,6 @@ function handleClick(event) {
       Vencer()
     }, 10)
   }
-
   updatesquare(position);
 }
 
