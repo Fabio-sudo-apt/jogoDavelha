@@ -60,12 +60,17 @@ function Vencer() {
   display.style.display = "block";
   let h1 = document.createElement("h1");
   display.appendChild(h1);
-  h1.innerHTML = "Vencedor";
+  
 
   let div = document.createElement("div");
   display.appendChild(div);
-  div.dataset.content =
-    playerTime == 0
-      ? String.fromCodePoint(0x1f6e1)
-      : String.fromCodePoint(0x2694);
+  if (playerTime != "") {
+    h1.innerHTML = "Vencedor";
+    div.dataset.content =
+      playerTime == 0
+        ? String.fromCodePoint(0x1f6e1)
+        : String.fromCodePoint(0x2694);
+  }else{
+    h1.innerHTML = "Empate!"
+  }
 }
