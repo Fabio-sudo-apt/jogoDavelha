@@ -11,23 +11,16 @@ function handleClick(event) {
   let position = square.id;
 
   if (handleMove(position)) {
-    setInterval(() => {
-      alert("O jogo Acabou");
-    }, 10);
+    setTimeout(() => {
+      alert("O jogo acabou - Vencedor foi " + (playerTime == 0?"Escudo":"Espada"))
+    }, 10)
   }
-  
-  updatesquare();
+
+  updatesquare(position);
 }
 
-function updatesquare() {
-  let squares = document.querySelectorAll(".square");
-
-  squares.forEach((square) => {
-    let postion = square.id;
-    let symbol = board[postion];
-
-    if (symbol != "") {
-      square.innerHTML = `<div class="${symbol}"></div>`;
-    }
-  });
+function updatesquare(position){
+  let square = document.getElementById(position.toString())
+  let symbol = board[position]
+  square.innerHTML = `<div class="${symbol}"></div>`;
 }
