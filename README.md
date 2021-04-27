@@ -3,10 +3,10 @@
 <h4 align="justify">🚀 Esse projeto foi a conclução dos modolos (HTML, CSS, JavaScript) CURSO DESENVOLVIMENTO WEB FULL STACK do Programadorbr.
 </h4>
 <br>
-<img src="./image/Captura de tela 2021-04-27 160104.png">
 <br>
-<img src="./image/Captura de tela 2021-04-27 160207.png">
-
+<img  align="center" src="./image/Captura de tela 2021-04-27 160104.png">
+<br>
+<br>
 <h2> 🔗 Tecnologia</h2>
 <ul>
     <li>HTML</li>
