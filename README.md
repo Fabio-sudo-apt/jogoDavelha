@@ -4,7 +4,7 @@
 </h4>
 <br>
 <br>
-<img  align="center" src="./image/Captura de tela 2021-04-27 160104.png">
+        <img  display="flex" src="./image/Captura de tela 2021-04-27 160104.png">
 <br>
 <br>
 <h2> 🔗 Tecnologia</h2>
